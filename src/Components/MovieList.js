@@ -6,11 +6,13 @@ const MovieList = (props) => {
         <div className="MovieList">
             {props.movies.map((movie,index) => 
                 <div className="movieCard">
-                    <div className="">
-                        <h3 className="title">{movie.title} <span> released in </span> {movie.year}</h3>
-                        <img style={{width : 250, heigth : 356}} src={movie.posterURL} alt={movie.title}/>
+                    <div className="title">
+                        <h3>{movie.title} <br/> <span> released in </span> {movie.year}</h3>
                     </div>
-                    <div className="">
+                    <div className="poster">
+                        <img src={movie.posterURL} alt={movie.title}/>
+                    </div>
+                    <div className="description">
                         <p>{movie.description}</p>
                     </div>
                 </div>
