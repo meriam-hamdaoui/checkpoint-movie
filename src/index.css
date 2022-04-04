@@ -1,1 +1,9 @@
+.body{
+    background: #06071b;
+    color: white;
+}
 
+.body .App > .row{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
