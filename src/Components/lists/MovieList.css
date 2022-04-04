@@ -1,0 +1,10 @@
+.MovieList{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 25px;
+}
+@media only screen and (max-width: 650px) {
+    .MovieList{
+      grid-template-columns: 100%;
+    }
+  }

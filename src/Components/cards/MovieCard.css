@@ -1,14 +1,7 @@
-.MovieList{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .movieCard{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    width: 30%;
 }
 .title{
     text-align: center;
@@ -17,14 +10,24 @@
     font-size: 20px;
 }
 .poster{
-    border: 1px solid red;    
+    /* border: 1px solid red;     */
     align-self: center;
 }
 .poster img{
     width: 250px;
     height: 250px;
 }
+.poster img:hover{
+    transform: scale(1.3s);
+}
 .description p{
     display: flex;
     flex-wrap: wrap;
+}
+.cardBottom{
+    display: flex;
+    justify-content: space-around;
+}
+.cardBottom a{
+    text-decoration: none;
 }
