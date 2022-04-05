@@ -1,19 +1,23 @@
-import React, {useRef} from "react";
+import React from "react";
 import './MovieList.css';
 import MovieCard from "../cards/MovieCard";
+import AddMovie from "../add/AddMovie";
 
 
-const MovieList = (props) => {
-    //initialise the input element using useRef
-    const inputEl = useRef("");
-    const getSearchTerm = () =>{
-        console.log(inputEl);
+const MovieList = ({movies, setMovies, searchByTitle,searchByRating}) => {
+    
+    const addToList = (film) => {
+        setMovies([...movies, film])
     }
+
     return (
         <div className="MovieList">
-            {props.movies.map((movie,index) => 
-               <MovieCard movie={movie}/>
+            {movies.filter(movie => movie.title.toLowerCase().includes(searchByTitle.toLowerCase()) && movie.rating >= searchByRating)
+            .map((movie,index) => 
+               <MovieCard key={index} 
+                    movie={movie}/>
             )}
+            <AddMovie addToList={addToList}/>
         </div>
     )
 }

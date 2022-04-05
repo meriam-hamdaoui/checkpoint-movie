@@ -1,4 +1,4 @@
-const Movies = [{
+export const Movies = [{
     id : 0,
     title : 'Baby Boss',
     year : 2017,
@@ -53,4 +53,3 @@ const Movies = [{
     trailerURL : 'https://www.youtube.com/watch?v=vu1qZCG6Yo8',
 }]
 
-export default Movies;

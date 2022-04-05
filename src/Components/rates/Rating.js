@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-const Rating = ({rate}) => {
-    function stars(x) {
+const Rating = ({rate,setSearchByRating = () => {}}) => {
+    function stars(star) {
         var rateTab = [];
-        for (let i=0; i<5; i++){
-            if( i<x ){
-                rateTab.push(<span style={{fontSize:'100%',color:'yellow'}}>★</span>);
+        for (let i=1; i<6; i++){
+            if( i<=star ){
+                rateTab.push(<span style={{fontSize:'100%',color:'yellow'}} onClick={() => setSearchByRating(i)} >★</span>);
             }else {
-                rateTab.push(<span style={{fontSize:'100%',color:'gray'}}>★</span>);
+                rateTab.push(<span  style={{fontSize:'100%',color:'gray'}} onClick={() => setSearchByRating(i)}>★</span>);
             }
         }
         return rateTab;
