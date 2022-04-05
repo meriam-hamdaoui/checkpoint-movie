@@ -3,8 +3,8 @@ import {Navbar} from 'react-bootstrap'
 import './Search.css';
 // import Movies from '../../Movies';
 
-
-function Filter({handleInput}) {
+//onKeypress & getSearchTerm didn't work
+function Search({inputEl, term, handleInput,getSearchTerm}) {
   // const [movies, setMovies] = useState(Movies)
   return (
     <div>
@@ -12,11 +12,15 @@ function Filter({handleInput}) {
             <Navbar.Brand style={{color : 'white'}} href="#home">Movie List</Navbar.Brand>            
             <div class="search-container">
               <input 
+                ref={inputEl}
                 type="text" 
                 name="search" 
                 placeholder="Search for a movie ..." 
                 className="search-input"
-                onChange={handleInput}                              
+                //the getSearchTerm will help us to find the movie by the input
+                onChange={handleInput}
+                onKeyPress={getSearchTerm} 
+                value={term}                              
               />
               <a href="#" className="search-btn">
                 <i class="fas fa-search"></i>      
@@ -27,4 +31,4 @@ function Filter({handleInput}) {
   )
 }
 
-export default Filter
+export default Search
