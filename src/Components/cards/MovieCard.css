@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   background: #140f1d;
-  box-shadow: 0 20px 30px 3px gold;
+  box-shadow: 0 0 30px 3px gold;
   border-radius: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

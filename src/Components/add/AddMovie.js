@@ -16,7 +16,7 @@ function AddMovie({ addToList }) {
 
   const handleClick = () => {
     handleClose();
-    addToList({ title, year, description, posterURL, rating });
+    addToList({ title, year, description, posterURL, rating, trailerURL });
   };
 
   return (

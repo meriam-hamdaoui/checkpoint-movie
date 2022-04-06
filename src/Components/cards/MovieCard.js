@@ -19,7 +19,9 @@ function MovieCard({
         <p>{description}</p>
       </div>
       <div className="cardBottom">
-        <a href={trailerURL}>WATCH TRAILER ►</a>
+        <a href={trailerURL} target="_blank">
+          WATCH TRAILER ►
+        </a>
         <Rating rate={rating} />
       </div>
     </div>
