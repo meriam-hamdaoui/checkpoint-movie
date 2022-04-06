@@ -13,17 +13,17 @@ function SearchMovie({ setSearchByTitle, setSearchByRating, searchByRating }) {
             placeholder="title ..."
             onChange={(e) => setSearchByTitle(e.target.value)}
           /> */}
-          <div class="box">
+          <div className="box">
             <form name="search">
               <input
                 className="input"
                 type="text"
                 name="txt"
-                onmouseout="document.search.txt.value = ''"
+                onMouseOut="document.search.txt.value = ''"
                 onChange={(e) => setSearchByTitle(e.target.value)}
               />
             </form>
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </div>
         </div>
         <div className="search-rating">

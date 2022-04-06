@@ -1,18 +1,13 @@
-.App{
-  height: 100%;
+.App {
+  position: inherit;
+  /* height: 100%; */
   /* background: #06071b; */
   background-color: #223343;
   color: white;
   text-align: center;
 }
-.App > .row{
+.App > .row {
   /* height: 100%; */
   overflow-x: auto;
   flex-wrap: nowrap;
 }
-@media only screen and (max-width: 750px) {
-  .App{
-    margin-top: 9%;
-  }
-}
-

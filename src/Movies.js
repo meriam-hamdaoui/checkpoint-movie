@@ -53,15 +53,15 @@ export const Movies = [
     rating: 2,
     trailerURL: "https://www.youtube.com/watch?v=Ku52zNnft8k",
   },
-  {
-    id: Math.random(),
-    title: "The Smurfs",
-    year: 2017,
-    description:
-      "Smurfette and best pals Brainy, Clumsy and Hefty journey deep into the Forbidden Forest to save a myserious lost village from evil wizard Gargamel",
-    posterURL:
-      "https://m.media-amazon.com/images/M/MV5BMTg1NjgyMTYzM15BMl5BanBnXkFtZTgwMzIxNDc4MDI@._V1_.jpg",
-    rating: 5,
-    trailerURL: "https://www.youtube.com/watch?v=vu1qZCG6Yo8",
-  },
+  // {
+  //   id: Math.random(),
+  //   title: "The Smurfs",
+  //   year: 2017,
+  //   description:
+  //     "Smurfette and best pals Brainy, Clumsy and Hefty journey deep into the Forbidden Forest to save a myserious lost village from evil wizard Gargamel",
+  //   posterURL:
+  //     "https://m.media-amazon.com/images/M/MV5BMTg1NjgyMTYzM15BMl5BanBnXkFtZTgwMzIxNDc4MDI@._V1_.jpg",
+  //   rating: 5,
+  //   trailerURL: "https://www.youtube.com/watch?v=vu1qZCG6Yo8",
+  // },
 ];

@@ -10,6 +10,7 @@
   /* background-color: #020024; */
   background: #140f1d;
   box-shadow: 0 5px 10px gold;
+  font-family: "Grape Nuts", cursive;
 }
 .search-container {
   display: flex;

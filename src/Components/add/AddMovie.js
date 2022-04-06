@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
+import "./AddMovie.css";
 
 function AddMovie({ addToList }) {
   const [show, setShow] = useState(false);
@@ -15,13 +16,17 @@ function AddMovie({ addToList }) {
 
   const handleClick = () => {
     handleClose();
-    addToList({ title, year, description, posterURL, rating, trailerURL });
+    addToList({ title, year, description, posterURL, rating });
   };
 
   return (
     <>
-      <Button variant="outline-warning" onClick={handleShow}>
-        Add Movie
+      <Button
+        className="movieCard"
+        variant="outline-warning"
+        onClick={() => handleShow()}
+      >
+        <span className="addSpan">Add Movie</span>
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -74,10 +79,10 @@ function AddMovie({ addToList }) {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={() => handleClose()}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClick}>
+          <Button variant="primary" onClick={() => handleClick()}>
             Save Changes
           </Button>
         </Modal.Footer>
