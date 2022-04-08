@@ -12,11 +12,17 @@ function App() {
   const [searchByTitle, setSearchByTitle] = useState("");
   //states for rating
   const [searchByRating, setSearchByRating] = useState(0);
-  //add fct
+
+  //add function
   const addToList = (film) => {
     setMovies([...movies, film]);
   };
-  
+
+  const removeFromList = (index) => {
+    var newMovies = Movies;
+    newMovies.splice(index, 1);
+    setMovies([...newMovies]);
+  };
   return (
     <div className="App">
       <SearchMovie
@@ -32,6 +38,7 @@ function App() {
         searchByTitle={searchByTitle}
         searchByRating={searchByRating}
         addToList={addToList}
+        removeFromList={removeFromList}
       />
     </div>
   );

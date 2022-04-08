@@ -3,14 +3,16 @@ import "./MovieCard.css";
 import Rating from "../rates/Rating";
 
 function MovieCard({
+  index,
+  removeFromList,
   movie: { title, year, posterURL, description, trailerURL, rating },
 }) {
   return (
     <div className="movieCard">
       <div className="cardHeader">
         <div className="croiX">
-          <button className="btnX">
-            <i class="fa-solid fa-xmark"></i>
+          <button onClick={() => removeFromList(index)} className="btnX">
+            <i className="fa-solid fa-xmark"></i>
           </button>
         </div>
         <div className="title">
