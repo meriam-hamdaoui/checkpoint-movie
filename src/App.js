@@ -17,12 +17,11 @@ function App() {
   const addToList = (film) => {
     setMovies([...movies, film]);
   };
-
-  const removeFromList = (index) => {
-    var newMovies = Movies;
-    newMovies.splice(index, 1);
-    setMovies([...newMovies]);
-  };
+  // const removeFromList = (index) => {
+  //   var newMovies = Movies;
+  //   newMovies.splice(index, 1);
+  //   setMovies([...newMovies]);
+  // };removeFromList={removeFromList}
   return (
     <div className="App">
       <SearchMovie
@@ -30,15 +29,12 @@ function App() {
         setSearchByRating={setSearchByRating}
         searchByRating={searchByRating}
       />
-      {/* <h1>My Movie list</h1>    */}
-
       <MovieList
         movies={movies}
         setMovies={setMovies}
         searchByTitle={searchByTitle}
         searchByRating={searchByRating}
         addToList={addToList}
-        removeFromList={removeFromList}
       />
     </div>
   );

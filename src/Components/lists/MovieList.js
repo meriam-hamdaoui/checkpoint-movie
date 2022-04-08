@@ -2,14 +2,9 @@ import React from "react";
 import "./MovieList.css";
 import MovieCard from "../cards/MovieCard";
 import AddMovie from "../add/AddMovie";
-
-const MovieList = ({
-  removeFromList,
-  movies,
-  addToList,
-  searchByTitle,
-  searchByRating,
-}) => {
+//props in title  removeFromList,
+//props in MoviCard component removeFromList={removeFromList}
+const MovieList = ({ movies, addToList, searchByTitle, searchByRating }) => {
   //remove function
 
   return (
@@ -23,11 +18,7 @@ const MovieList = ({
             movie.rating >= searchByRating
         )
         .map((movie, index) => (
-          <MovieCard
-            key={index}
-            movie={movie}
-            removeFromList={removeFromList}
-          />
+          <MovieCard key={index} movie={movie} />
         ))}
       <AddMovie addToList={addToList} />
     </div>
