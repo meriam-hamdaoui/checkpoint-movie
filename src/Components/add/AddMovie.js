@@ -22,6 +22,7 @@ function AddMovie({ addToList }) {
   return (
     <>
       <Button
+        style={{ borderRadius: "25px" }}
         className="movieCard"
         variant="outline-warning"
         onClick={() => handleShow()}
