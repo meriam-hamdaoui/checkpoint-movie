@@ -7,10 +7,17 @@ function MovieCard({
 }) {
   return (
     <div className="movieCard">
-      <div className="title">
-        <h3>
-          {title} <br /> <span> released in </span> {year}
-        </h3>
+      <div className="cardHeader">
+        <div className="croiX">
+          <button className="btnX">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div className="title">
+          <h3>
+            {title} <br /> <span> released in </span> {year}
+          </h3>
+        </div>
       </div>
       <div className="poster">
         <img src={posterURL} alt={title} />

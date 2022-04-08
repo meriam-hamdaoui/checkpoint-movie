@@ -33,3 +33,30 @@
 .cardBottom a:hover {
   color: gold;
 }
+.cardHeader {
+  /* border: 1px solid white; */
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+/* .title {
+  border: 1px solid red;
+} */
+.croiX {
+  /* border: 1px solid red; */
+  height: 34px;
+  order: 1;
+  position: relative;
+  top: 20%;
+  /* margin-left: 200px; */
+}
+.btnX {
+  border: none;
+  background: transparent;
+}
+.fa-xmark {
+  color: #ffd52d;
+  transition: 0.2s;
+  font-size: 40px;
+}
