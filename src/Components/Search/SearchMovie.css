@@ -15,6 +15,9 @@
   display: flex;
   justify-content: space-around;
 }
+.divTitle {
+  margin-right: 3%;
+}
 .search-title {
   width: 50%;
   display: flex;
@@ -36,7 +39,7 @@
 /* css style and animation to the input box */
 .box {
   position: relative;
-  top: 50%;
+  top: 45%;
   left: 27%;
   transform: translate(-50%, -50%);
 }
@@ -72,4 +75,71 @@
 .box:hover i {
   opacity: 0;
   z-index: -1;
+}
+
+/* responsive design */
+@media only screen and (max-width: 600px) {
+  .SearchMovie {
+    height: 100%;
+    padding-left: 10%;
+  }
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-title,
+  .search-rating {
+    width: 100%;
+  }
+  .search-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .divTitle {
+    margin-bottom: 4%;
+  }
+  .search-rating {
+    padding-right: 20%;
+  }
+  .box {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .SearchMovie {
+    height: 100%;
+    padding-left: 10%;
+  }
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-title,
+  .search-rating {
+    width: 100%;
+  }
+  .search-title {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .SearchMovie {
+    height: 100%;
+    padding-left: 10%;
+  }
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-title,
+  .search-rating {
+    width: 100%;
+  }
+  .search-title {
+    display: flex;
+    flex-direction: column;
+  }
 }

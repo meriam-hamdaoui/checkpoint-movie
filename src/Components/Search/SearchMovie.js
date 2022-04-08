@@ -7,10 +7,14 @@ function SearchMovie({ setSearchByTitle, setSearchByRating, searchByRating }) {
     <div className="SearchMovie">
       <div className="search-container">
         <div className="search-title">
-          <span className="searchTxt">Title Filtering</span>
+          <div className="divTitle">
+            <span className="searchTxt">Title Filtering</span>
+          </div>
+
           {/* <input
             type="text"
             placeholder="title ..."
+            onMouseOut="document.search.txt.value = ''"
             onChange={(e) => setSearchByTitle(e.target.value)}
           /> */}
           <div className="box">
@@ -19,7 +23,6 @@ function SearchMovie({ setSearchByTitle, setSearchByRating, searchByRating }) {
                 className="input"
                 type="text"
                 name="txt"
-                onMouseOut="document.search.txt.value = ''"
                 onChange={(e) => setSearchByTitle(e.target.value)}
               />
             </form>

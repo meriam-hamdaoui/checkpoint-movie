@@ -44,7 +44,7 @@ export const Movies = [
   },
   {
     id: Math.random(),
-    title: "Hotel Transylvania 3",
+    title: "Hotel Transylvania",
     year: 2018,
     description:
       "Her dad is lonely and stressed. Time for a familly vacation! But watch out - someone is out to crush all monsterkind",

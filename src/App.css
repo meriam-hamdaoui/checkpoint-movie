@@ -1,10 +1,5 @@
 .App {
   position: inherit;
-  background: #45a29e;
+  /* background: #45a29e; */
   color: white;
-  text-align: center;
-}
-.App > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
 }
