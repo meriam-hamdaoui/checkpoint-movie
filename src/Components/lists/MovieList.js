@@ -2,11 +2,8 @@ import React from "react";
 import "./MovieList.css";
 import MovieCard from "../cards/MovieCard";
 import AddMovie from "../add/AddMovie";
-//props in title  removeFromList,
-//props in MoviCard component removeFromList={removeFromList}
-const MovieList = ({ movies, addToList, searchByTitle, searchByRating }) => {
-  //remove function
 
+const MovieList = ({ movies, addToList, searchByTitle, searchByRating }) => {
   return (
     <div className="MovieList">
       {movies

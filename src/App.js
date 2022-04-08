@@ -17,11 +17,7 @@ function App() {
   const addToList = (film) => {
     setMovies([...movies, film]);
   };
-  // const removeFromList = (index) => {
-  //   var newMovies = Movies;
-  //   newMovies.splice(index, 1);
-  //   setMovies([...newMovies]);
-  // };removeFromList={removeFromList}
+
   return (
     <div className="App">
       <SearchMovie

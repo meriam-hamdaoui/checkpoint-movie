@@ -15,6 +15,10 @@
   transform: scale(1.1);
   box-shadow: 0 5px 10px -12.12px rgba(0, 0, 0, 0.02);
 }
+.cardHeader {
+  /* border: 1px solid red; */
+  text-align: center;
+}
 .title span {
   font-size: 20px;
 }
@@ -38,30 +42,16 @@
 .cardBottom a:hover {
   color: gold;
 }
-.cardHeader {
+/* .cardHeader {
   /* border: 1px solid white; */
-  width: 95%;
+/*width: 95%;
   display: flex;
   justify-content: space-between;
   margin-left: 3.5%;
-}
-.title {
+} */
+/* .title {
   padding-left: 15%;
-}
-.btnX {
-  height: 34px;
-  order: 1;
-  position: relative;
-  top: 15%;
-  margin-left: 9%;
-  border: none;
-  background: transparent;
-}
-.fa-xmark {
-  color: #ffd52d;
-  transition: 0.2s;
-  font-size: 40px;
-}
+} */
 .description p {
   padding-left: 15px;
   display: flex;
